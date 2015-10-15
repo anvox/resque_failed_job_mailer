@@ -1,22 +1,14 @@
-Overview [![Build Status](https://secure.travis-ci.org/anandagrawal84/resque_failed_job_mailer.png?branch=master)](http://travis-ci.org/anandagrawal84/resque_failed_job_mailer)
+Overview
 --------
 
-The resque-failed-job-mailer gem is used to send email along with whole exception backtrace whenever there is any failure in resque job.
+Folk from https://github.com/anandagrawal84/resque_failed_job_mailer and customize for app.saleshood.com
 
 
 Installation
 ------------
 
-Installation of the plugin can be done using the built in Rails plugin script. Issue the following
-command from the root of your Rails application:
+TBA
 
-    $ ./script/rails plugin install git://github.com/anandagrawal84/resque_failed_job_mailer.git
-
-or add it to your Gemfile:
-
-    gem 'resque-failed-job-mailer', :require => 'resque_failed_job_mailer'
-
-and run `bundle install` to install the new dependency.
 
 Usage
 -----
