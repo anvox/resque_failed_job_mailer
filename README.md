@@ -18,7 +18,8 @@ All you need to do is configure ActionMailer for smtp details. Add following con
 Resque::Failure::Notifier.configure do |config|
   config.from = 'dummy@dummy.com' # from address
   config.to = 'dummy@dummy.com' # to address
-  config.include_payload = true # enabled by default
+  config.include_payload = true # disabled by default for security
+  config.include_exception = true # disabled by default for security
 end
 ```
 
