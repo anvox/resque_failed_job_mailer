@@ -20,6 +20,7 @@ Resque::Failure::Notifier.configure do |config|
   config.to = 'dummy@dummy.com' # to address
   config.include_payload = true # disabled by default for security
   config.include_exception = true # disabled by default for security
+  config.tags = ["ProjectX","Wolverine","Resque"] # \[ProjectX\]\[Wolverine\]\[Resque\] tag displayed in email summary
 end
 ```
 
