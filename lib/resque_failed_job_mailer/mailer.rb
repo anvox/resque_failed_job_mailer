@@ -3,7 +3,9 @@ module ResqueFailedJobMailer
     def alert notifier
       @notifier = notifier
       text = ERB.new(File.read(File.dirname(__FILE__) + "/alert.html.erb")).result(binding)
-      mail :from => Resque::Failure::Notifier.from, :to => Resque::Failure::Notifier.to, :subject => "[Resque] #{@notifier.exception}" do |format|
+      tags = Resque::Failure::Notifier.tags
+      subject = "[#{tags.join('][')}] #{@notifier.exception}"
+      mail :from => Resque::Failure::Notifier.from, :to => Resque::Failure::Notifier.to, :subject => subject do |format|
         format.html { render :text => text }
       end
     end

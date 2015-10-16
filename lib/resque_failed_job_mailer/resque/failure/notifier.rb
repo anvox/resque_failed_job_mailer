@@ -4,7 +4,7 @@ module Resque
   module Failure
     class Notifier < Base
       class << self
-        attr_accessor :mailer, :mail, :from, :to, :include_payload
+        attr_accessor :mailer, :mail, :from, :to, :include_payload, :tags
 
         def configure
           yield self

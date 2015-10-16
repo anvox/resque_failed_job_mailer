@@ -15,6 +15,7 @@ Resque::Failure::Notifier.configure do |config|
   config.mail = :alert
   config.from = "no_reply@gmail.com"
   config.to = "dummy@dummy.com"
+  config.tags = ["Resque"]
 end
 
 module ResqueFailedJobMailer
