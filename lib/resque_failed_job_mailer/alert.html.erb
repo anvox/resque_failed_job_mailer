@@ -12,9 +12,11 @@
   <%= @notifier.payload %>
 </p>
 <% end %>
+<% if @notifier.class.include_exception %>
 <strong> Exception: </strong>
 <p>
   <%= @notifier.exception %>
   <pre><% @notifier.exception.backtrace.each do |t| %><%= t %>
 <% end %></pre>
 </p>
+<% end %>
