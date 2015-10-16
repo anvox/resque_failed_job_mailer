@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "resque_failed_job_mailer/version"
 
 Gem::Specification.new do |s|
-  s.name        = "saleshood-resque-failed-job-mailer"
+  s.name        = "resque-failed-job-mailer"
   s.version     = ResqueFailedJobMailer::VERSION
   s.authors     = ["Anand Agrawal", "Rajashree Malvade", "An Vo"]
   s.email       = ["aagrawal@thoughtworks.com", "rajashreermalvade@gmail.com", "heosuax@gmail.com"]
