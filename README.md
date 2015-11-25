@@ -1,7 +1,8 @@
 Overview
 --------
 
-Folk from https://github.com/anandagrawal84/resque_failed_job_mailer and customize for app.saleshood.com
+Folk from https://github.com/anandagrawal84/resque_failed_job_mailer and customizable.
+Making it general and seperate from anandagrawal84/resque_failed_job_mailer due to inactive repo.
 
 
 Installation
@@ -20,7 +21,7 @@ Resque::Failure::Notifier.configure do |config|
   config.to = 'dummy@dummy.com' # to address
   config.include_payload = true # disabled by default for security
   config.include_exception = true # disabled by default for security
-  config.tags = ["ProjectX","Wolverine","Resque"] # \[ProjectX\]\[Wolverine\]\[Resque\] tag displayed in email summary
+  config.tags = ["ProjectX","Wolverine","Resque"] # [ProjectX][Wolverine][Resque] tag displayed in email summary
 end
 ```
 
