@@ -3,14 +3,25 @@
 Overview
 --------
 
+Send email with predefined template when resque worker die of any reason.
+
 Folk from https://github.com/anandagrawal84/resque_failed_job_mailer and customizable.
+
 Making it general and seperate from anandagrawal84/resque_failed_job_mailer due to inactive repo.
 
 
 Installation
 ------------
 
-TBA
+```bash
+gem install resque-failed-job-mailer-2
+```
+
+Or add to Gemfile:
+
+```
+gem 'resque-failed-job-mailer-2'
+```
 
 
 Usage
