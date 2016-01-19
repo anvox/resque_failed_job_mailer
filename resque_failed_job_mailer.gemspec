@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = ResqueFailedJobMailer::VERSION
   s.authors     = ["Anand Agrawal", "Rajashree Malvade", "An Vo"]
   s.email       = ["aagrawal@thoughtworks.com", "rajashreermalvade@gmail.com", "thien.an.vo.nguyen@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = 'https://github.com/anvox/resque_failed_job_mailer'
   s.summary     = %q{Gem that sends mail in case of resque job failure.}
   s.description = %q{Gem that sends mail in case of resque job failure. Extend to customize email summary, payload, exception.}
 
@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency "rake"
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "actionmailer"
-  s.add_development_dependency "resque"
+  s.add_development_dependency 'rake', '~> 0'
+  s.add_development_dependency 'rspec', '~> 0'
+  s.add_development_dependency 'actionmailer', '~> 0'
+  s.add_development_dependency 'resque', '~> 0'
 end
