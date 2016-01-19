@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/heosuax/resque_failed_job_mailer.svg?branch=master)](https://travis-ci.org/heosuax/resque_failed_job_mailer)
-
 Overview
 --------
 
